@@ -6,3 +6,63 @@
 @import "parts/base";
 @import "layout/header";
 @import "layout/footer";
+
+.article {
+  .section {
+    .section-home {
+      .row {
+        [class^="col"] {
+          padding: 0;
+          margin: 0;
+        }
+        align-items: center;
+        .section-home-left {
+          // display: flex;
+          h1 {
+            font-size: 3.6rem;
+            font-weight: 800;
+            line-height: 4.8rem;
+          }
+          p:nth-of-type(1) {
+            width: 380px;
+            font-weight: 800;
+            font-size: 4.3rem;
+            line-height: 5.3rem;
+            margin-bottom: 27px;
+          }
+          p:nth-of-type(2) {
+            width: 450px;
+            line-height: 2rem;
+          }
+        }
+        .section-home-right {
+          width: calc(1520px / 2 - 20px);
+          height: 708px;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          background-color: var(--green-200);
+          .section-home-right-para {
+            rotate: 90deg;
+            > * {
+              position: absolute;
+              opacity: 0.2;
+              font-size: 16.6rem;
+              font-weight: 800;
+              line-height: 1;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -100%);
+            }
+          }
+          img {
+            position: absolute;
+            right: 20%;
+          }
+        }
+      }
+    }
+  }
+}
