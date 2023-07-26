@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper-inner {
+  width: 1508px;
+  height: 1037px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Sidebar Header Header Header Header" "Sidebar Main Main Main Main" "Sidebar Main Main Main Main" "Sidebar Main Main Main Main" "Sidebar Main Main Main Main";
+}
+.wrapper-inner .Sidebar {
+  width: 263px;
+  grid-area: Sidebar;
+  padding: 54px 0 0 58px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-inner .Sidebar .heading {
+  margin-top: 60px;
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+.wrapper-inner .Sidebar .nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  row-gap: 18px;
+}
+.wrapper-inner .Sidebar .nav .nav-item {
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: black;
+  padding: 6px;
+  border-radius: 8px;
+  transition: background-color 0.2s linear;
+}
+.wrapper-inner .Sidebar .nav .nav-item:hover {
+  background-color: rgba(221, 221, 221, 0.4470588235);
+}
+.wrapper-inner .Sidebar .nav .nav-item .icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+.wrapper-inner .Sidebar .btn-chat {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  position: fixed;
+  bottom: 62px;
+  cursor: pointer;
+}
+.wrapper-inner .Sidebar .btn-chat .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #f6f6f6;
+  column-gap: 18px;
+}
+.wrapper-inner .Header {
+  height: 128px;
+  grid-area: Header;
+  display: flex;
+  align-items: center;
+}
+.wrapper-inner .Header .search-form {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+  margin-right: auto;
+}
+.wrapper-inner .Header .search-form .search {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: #fff;
+}
+.wrapper-inner .Header .search-form .search::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.wrapper-inner .Header .nav {
+  display: flex;
+  column-gap: 46px;
+}
+.wrapper-inner .Header .nav .nav-link {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 600;
+  position: relative;
+  padding: 8px 0;
+}
+.wrapper-inner .Header .nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  transition: width 0.5s;
+}
+.wrapper-inner .Header .nav .nav-link:hover::after, .wrapper-inner .Header .nav .nav-link.active::after {
+  width: 100%;
+}
+.wrapper-inner .Header .actions {
+  margin-left: 50px;
+  display: flex;
+  column-gap: 26px;
+  align-items: center;
+}
+.wrapper-inner .Main {
+  grid-area: Main;
+  padding-top: 20px;
+}
+.wrapper-inner .Main .container {
+  width: 1151px;
+  height: 820px;
+  margin: 0 auto;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  gap: 22px;
+  grid-auto-flow: row;
+  grid-template-areas: "pic1 pic1 pic3 pic4" "pic2 pic2 pic3 pic4" "pic5 pic6 pic7 pic7" "pic5 pic6 pic8 pic8";
+}
+.wrapper-inner .Main .container > * > * {
+  border-radius: 16px;
+}
+.wrapper-inner .Main .pic1 {
+  grid-area: pic1;
+}
+.wrapper-inner .Main .pic2 {
+  grid-area: pic2;
+}
+.wrapper-inner .Main .pic3 {
+  grid-area: pic3;
+}
+.wrapper-inner .Main .pic4 {
+  grid-area: pic4;
+}
+.wrapper-inner .Main .pic5 {
+  grid-area: pic5;
+}
+.wrapper-inner .Main .pic6 {
+  grid-area: pic6;
+}
+.wrapper-inner .Main .pic7 {
+  grid-area: pic7;
+}
+.wrapper-inner .Main .pic8 {
+  grid-area: pic8;
+}
+
+/*# sourceMappingURL=style.css.map */
