@@ -268,3 +268,11 @@
     }
   }
 }
+@media screen and (max-width: 991px) {
+  .header .header-right .menu {
+    display: none;
+  }
+  .header .header-right .menu-toggle {
+    z-index: 1;
+  }
+}
