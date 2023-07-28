@@ -1,0 +1,19 @@
+@mixin circle($width: 235px, $height: $width) {
+  width: $width;
+  height: $height;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+@mixin product-line {
+  content: "";
+  position: absolute;
+  width: 40.833px;
+  height: 1.667px;
+  background-color: var(--grey-500-main, #a3a3a3);
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
