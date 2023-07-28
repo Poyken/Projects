@@ -268,11 +268,27 @@
     }
   }
 }
-@media screen and (max-width: 991px) {
-  .header .header-right .menu {
-    display: none;
+@media screen and (max-width: 1200px) {
+  .article .section .home .container .row .home-left {
+    > * {
+      text-align: center;
+    }
+    p:nth-of-type(1) {
+      width: auto;
+    }
+    p:nth-of-type(2) {
+      width: auto;
+      margin: auto 20px;
+      margin-bottom: 50px;
+    }
   }
-  .header .header-right .menu-toggle {
-    z-index: 1;
+  .article .section .home .container .row .home-right {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+  }
+  .article .section .achievement .achievement-quality {
+    flex-direction: column;
+    row-gap: 50px;
   }
 }

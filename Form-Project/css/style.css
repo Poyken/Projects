@@ -174,13 +174,59 @@ p {
   color: #fff;
 }
 .header .container .row .header-right .menu-toggle {
-  position: relative;
-  z-index: -1;
+  display: none;
 }
 .header .container .row .header-right .menu-toggle i {
-  display: block;
+  cursor: pointer;
 }
 
+@media screen and (max-width: 991px) {
+  .header .container {
+    padding: 0 50px;
+  }
+  .header .container .row .header-right .menu {
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -40vw;
+    transition: left 0.4s ease;
+  }
+  .header .container .row .header-right .menu ul {
+    width: 40vw;
+    height: 100vh;
+    padding-top: 5vh;
+  }
+  .header .container .row .header-right .menu ul li {
+    display: list-item;
+    margin: 50px;
+  }
+  .header .container .row .header-right .menu ul li a {
+    color: #2c2c2c;
+  }
+  .header .container .row .header-right .menu-toggle {
+    display: block;
+  }
+  .header .container .row .header-right .overlay {
+    transition: opacity 0.4s ease;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 40vw;
+    width: 60vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.426);
+    opacity: 0;
+  }
+  .header .container .row .header-right input[type=checkbox]:checked + .menu {
+    left: 0;
+  }
+  .header .container .row .header-right input[type=checkbox]:checked ~ .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 .footer {
   height: 408px;
   background-color: var(--green-100);
@@ -190,6 +236,7 @@ p {
 }
 .footer .container .footer-top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .footer .container .footer-top .title {
@@ -519,12 +566,26 @@ p {
   height: 240px;
 }
 
-@media screen and (max-width: 991px) {
-  .header .header-right .menu {
-    display: none;
+@media screen and (max-width: 1200px) {
+  .article .section .home .container .row .home-left > * {
+    text-align: center;
   }
-  .header .header-right .menu-toggle {
-    z-index: 1;
+  .article .section .home .container .row .home-left p:nth-of-type(1) {
+    width: auto;
+  }
+  .article .section .home .container .row .home-left p:nth-of-type(2) {
+    width: auto;
+    margin: auto 20px;
+    margin-bottom: 50px;
+  }
+  .article .section .home .container .row .home-right {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+  }
+  .article .section .achievement .achievement-quality {
+    flex-direction: column;
+    row-gap: 50px;
   }
 }
 
