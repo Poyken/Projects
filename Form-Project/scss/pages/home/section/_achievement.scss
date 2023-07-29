@@ -1,0 +1,109 @@
+@import "../../../parts/mixins";
+.achievement {
+  margin-top: 80px;
+  .achievement-para {
+    margin: 80px auto;
+    text-align: center;
+    h2 {
+      font-size: 3.1rem;
+      font-weight: 800;
+      line-height: 1.3;
+      display: inline-block;
+      width: 558px;
+      height: 84px;
+    }
+    p {
+      display: inline-block;
+      width: 643px;
+      height: 44px;
+    }
+  }
+  .achievement-quality {
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 21px;
+    %quality {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      // row-gap: 23px;
+
+      position: relative;
+      width: 294px;
+      height: 338px;
+      flex-shrink: 0;
+      border-radius: 3.333px;
+      background: var(--white, #fff);
+      box-shadow: -5.8333330154418945px 8.333333015441895px 72.5px 0px
+        rgba(54, 54, 54, 0.12);
+      .icon-quality {
+        position: relative;
+        width: 83px;
+        height: 83px;
+        display: block;
+        border-radius: 10px;
+        img {
+          width: 45px;
+          height: 45px;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 50%;
+        }
+      }
+      span {
+        font-size: 43.333px;
+        font-weight: 800;
+      }
+      p {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+      &::before {
+        @include circle;
+      }
+      > * {
+        margin: 0 33px;
+      }
+    }
+    .family {
+      @extend %quality;
+      &::before {
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        background-color: var(--green-200);
+      }
+      .icon-quality {
+        background-color: var(--orange-100);
+      }
+    }
+
+    .restaurant {
+      @extend %quality;
+      width: 342.5px;
+      height: 392.5px;
+      border-radius: 3.333px;
+      background: var(--white, #fff);
+      box-shadow: -5.8333330154418945px 8.333333015441895px 72.5px 0px
+        rgba(54, 54, 54, 0.12);
+      .icon-quality {
+        background-color: var(--green-200);
+      }
+    }
+    .province {
+      @extend %quality;
+      &::before {
+        top: 110%;
+        transform: translate(-50%, -50%);
+        left: 100%;
+        background-color: var(--orange-200);
+      }
+      .icon-quality {
+        background-color: var(--orange-100);
+      }
+    }
+  }
+}

@@ -1,0 +1,260 @@
+.article {
+  padding: 0;
+}
+.article .section .home .container .row {
+  align-items: center;
+}
+.article .section .home .container .row [class^=col] {
+  padding: 0;
+  margin: 0;
+}
+.article .section .home .container .row .home-left h1 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  line-height: 4.8rem;
+}
+.article .section .home .container .row .home-left p:nth-of-type(1) {
+  font-weight: 800;
+  font-size: 4.3rem;
+  line-height: 5.3rem;
+  margin-bottom: 27px;
+}
+.article .section .home .container .row .home-left p:nth-of-type(2) {
+  line-height: 2rem;
+}
+.article .section .home .container .row .home-right {
+  border-radius: 16.667px 0px 0px 16.667px;
+  width: 50vw;
+  height: 50vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--green-200);
+}
+.article .section .home .container .row .home-right .home-right-para {
+  rotate: 90deg;
+}
+.article .section .home .container .row .home-right .home-right-para > * {
+  margin: 0;
+  position: absolute;
+  opacity: 0.2;
+  font-size: 12vw;
+  font-weight: 800;
+  line-height: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -105%);
+}
+.article .section .home .container .row .home-right img {
+  position: absolute;
+  right: 16%;
+}
+
+@media screen and (max-width: 1200px) {
+  .article .section .home .container .row .home-right {
+    border-radius: 16.667px;
+  }
+}
+.achievement {
+  margin-top: 80px;
+}
+.achievement .achievement-para {
+  margin: 80px auto;
+  text-align: center;
+}
+.achievement .achievement-para h2 {
+  font-size: 3.1rem;
+  font-weight: 800;
+  line-height: 1.3;
+  display: inline-block;
+  width: 558px;
+  height: 84px;
+}
+.achievement .achievement-para p {
+  display: inline-block;
+  width: 643px;
+  height: 44px;
+}
+.achievement .achievement-quality {
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 21px;
+}
+.achievement .achievement-quality .province, .achievement .achievement-quality .restaurant, .achievement .achievement-quality .family {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+  width: 294px;
+  height: 338px;
+  flex-shrink: 0;
+  border-radius: 3.333px;
+  background: var(--white, #fff);
+  box-shadow: -5.8333330154px 8.3333330154px 72.5px 0px rgba(54, 54, 54, 0.12);
+}
+.achievement .achievement-quality .province .icon-quality, .achievement .achievement-quality .restaurant .icon-quality, .achievement .achievement-quality .family .icon-quality {
+  position: relative;
+  width: 83px;
+  height: 83px;
+  display: block;
+  border-radius: 10px;
+}
+.achievement .achievement-quality .province .icon-quality img, .achievement .achievement-quality .restaurant .icon-quality img, .achievement .achievement-quality .family .icon-quality img {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.achievement .achievement-quality .province span, .achievement .achievement-quality .restaurant span, .achievement .achievement-quality .family span {
+  font-size: 43.333px;
+  font-weight: 800;
+}
+.achievement .achievement-quality .province p, .achievement .achievement-quality .restaurant p, .achievement .achievement-quality .family p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.achievement .achievement-quality .province::before, .achievement .achievement-quality .restaurant::before, .achievement .achievement-quality .family::before {
+  width: 235px;
+  height: 235px;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.achievement .achievement-quality .province > *, .achievement .achievement-quality .restaurant > *, .achievement .achievement-quality .family > * {
+  margin: 0 33px;
+}
+.achievement .achievement-quality .family::before {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background-color: var(--green-200);
+}
+.achievement .achievement-quality .family .icon-quality {
+  background-color: var(--orange-100);
+}
+.achievement .achievement-quality .restaurant {
+  width: 342.5px;
+  height: 392.5px;
+  border-radius: 3.333px;
+  background: var(--white, #fff);
+  box-shadow: -5.8333330154px 8.3333330154px 72.5px 0px rgba(54, 54, 54, 0.12);
+}
+.achievement .achievement-quality .restaurant .icon-quality {
+  background-color: var(--green-200);
+}
+.achievement .achievement-quality .province::before {
+  top: 110%;
+  transform: translate(-50%, -50%);
+  left: 100%;
+  background-color: var(--orange-200);
+}
+.achievement .achievement-quality .province .icon-quality {
+  background-color: var(--orange-100);
+}
+
+.product h2 {
+  font-size: 3.1rem;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.product .container {
+  margin-bottom: 130px;
+  display: flex;
+  column-gap: 93px;
+  row-gap: 96px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.product .container .product-item {
+  position: relative;
+  width: 269.316px;
+  height: 592.369px;
+}
+.product .container .product-item h2 {
+  position: relative;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.product .container .product-item h2::after {
+  content: "";
+  position: absolute;
+  width: 40.833px;
+  height: 1.667px;
+  background-color: var(--grey-500-main, #a3a3a3);
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product .container .product-item p:nth-of-type(2) span {
+  font-size: 23.333px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.667px;
+}
+.product .container .product-item > * {
+  text-align: center;
+}
+.product .container .product-item .btn {
+  position: absolute;
+  bottom: -8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 154px;
+}
+.product .container .product-item .btn a {
+  display: block;
+  font-weight: 700;
+  color: #fff;
+  padding: 13.333px 11.667px;
+  border-radius: 6.667px;
+  background: var(--green-800-main, #46b20f);
+}
+.product .container .product-item:nth-child(n)::before {
+  width: 269px;
+  height: 269px;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--orange-300);
+}
+.product .container .product-item:nth-child(2) .product-image::before {
+  width: 269px;
+  height: 269px;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--green-300);
+}
+.product .container .product-item:nth-child(5) .product-image::before {
+  width: 269px;
+  height: 269px;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--green-300);
+}
+.product .container .product-item .product-image img {
+  margin-top: 115px;
+  width: 240px;
+  height: 240px;
+}
+
+/*# sourceMappingURL=home.css.map */
