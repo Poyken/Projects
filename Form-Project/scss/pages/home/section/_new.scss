@@ -1,0 +1,113 @@
+.new {
+  .new-para {
+    .title > * {
+      text-align: center;
+      font-size: 3.1rem;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+    p {
+      margin: 0 auto;
+      max-width: 657.5px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+  .new-item {
+    padding: 0 50px;
+    padding-top: 13px;
+    display: flex;
+    gap: 28.83px;
+    .item {
+      display: flex;
+      flex-direction: column;
+      p:nth-of-type(1) > * {
+        width: 385px;
+        height: 273.333px;
+      }
+      span {
+        max-width: 385px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        :first-child {
+          color: var(--green-800-main, #46b20f);
+          font-weight: 500;
+        }
+        div {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          :first-child {
+            width: 20px;
+            height: 20px;
+          }
+          :last-child {
+            color: var(--grey-500-main, #a3a3a3);
+            font-weight: 500;
+          }
+        }
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.6rem;
+      }
+      p:nth-of-type(2) {
+        line-height: 2rem;
+      }
+    }
+  }
+  .btn {
+    margin: 80px auto;
+    max-width: 160px;
+    a {
+      &:hover {
+        background-color: var(--green-800-main, #46b20f);
+        color: white;
+      }
+      transition: background-color 0.5s ease;
+      padding: 11px 21px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3.33px;
+      border-radius: 6.667px;
+      border: 0.833px solid var(--green-800-main, #46b20f);
+      p {
+        margin: 0;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .new {
+    .new-para {
+      p {
+        padding: 0 50px;
+      }
+    }
+    .new-item {
+      flex-wrap: wrap;
+      justify-content: center;
+      .item {
+        max-width: 385px;
+        text-align: center;
+        span {
+          padding-top: 10px;
+          margin: 0 auto;
+          gap: 50px;
+        }
+        p {
+          margin: 0 auto;
+        }
+        > p,
+        > h3 {
+          padding: 0 50px;
+        }
+      }
+    }
+  }
+}

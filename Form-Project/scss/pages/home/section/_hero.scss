@@ -1,6 +1,6 @@
-.article {
+.section {
   padding: 0;
-  .section {
+  .article {
     .home {
       .container {
         .row {
@@ -21,9 +21,13 @@
               font-size: 4.3rem;
               line-height: 5.3rem;
               margin-bottom: 27px;
+              width: 381px;
+              max-width: 80vw;
             }
             p:nth-of-type(2) {
               line-height: 2rem;
+              max-width: 80vw;
+              width: 450px;
             }
           }
           .home-right {
@@ -61,7 +65,22 @@
   }
 }
 @media screen and (max-width: 1200px) {
-  .article .section .home .container .row .home-right {
+  .section .article .home .container .row .home-left {
+    text-align: center;
+    p:nth-of-type(1) {
+      width: auto;
+      margin: 0 auto;
+    }
+    p:nth-of-type(2) {
+      width: auto;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+  .section .article .home .container .row .home-right {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
     border-radius: 16.667px;
   }
 }

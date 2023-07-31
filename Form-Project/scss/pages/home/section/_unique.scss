@@ -1,0 +1,16 @@
+.unique {
+  margin-top: 230px;
+  .unique-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 40px;
+    .item {
+      min-width: 288px;
+      p {
+        max-width: 216px;
+      }
+    }
+  }
+}

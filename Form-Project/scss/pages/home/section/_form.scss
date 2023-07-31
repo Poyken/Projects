@@ -1,0 +1,116 @@
+.form {
+  margin: 150px 0;
+  .container {
+    display: flex;
+    gap: 150px;
+    .form-left {
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 439.167px;
+        height: 439.167px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: var(--orange-100, #fff0e7);
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        z-index: -1;
+      }
+    }
+    .form-right {
+      position: relative;
+      .form-title {
+        p {
+          font-weight: 600;
+          line-height: 26.667px; /* 133.333% */
+        }
+      }
+      .input {
+        margin-top: 5px;
+
+        position: absolute;
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+          > input {
+            width: 35vw;
+          }
+          .line2 {
+            display: flex;
+            gap: 17.5px;
+            input {
+              width: 17vw;
+            }
+          }
+          input {
+            padding: 13.333px 0 13.333px 13.333px;
+            height: 45px;
+            border-radius: 6.667px;
+            border: 0.833px solid var(--grey-500-main, #a3a3a3);
+            &::placeholder {
+              color: var(--grey-500-main, #a3a3a3);
+            }
+          }
+          :nth-child(3) {
+            width: 35vw;
+            padding: 13.333px;
+            padding-bottom: 116.667px;
+            gap: 8.333px;
+            border-radius: 6.667px;
+            border: 0.833px solid var(--grey-500-main, #a3a3a3);
+            &::placeholder {
+              color: var(--grey-500-main, #a3a3a3);
+            }
+          }
+          :nth-child(4) {
+            &:hover {
+              background-color: red;
+            }
+            transition: background-color 0.5s ease;
+            margin-left: auto;
+            width: 128px;
+            height: 46px;
+            border-radius: 6.667px;
+            background: var(--green-800-main, #46b20f);
+            font-weight: 700;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .form {
+    .container {
+      .form-left {
+        display: none;
+      }
+      .form-right {
+        margin-bottom: 250px;
+        .input {
+          form {
+            input {
+              width: 96vw;
+            }
+            .line2 {
+              input {
+                width: 47vw;
+              }
+            }
+            :nth-child(3) {
+              width: 96vw;
+            }
+            :nth-child(4) {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

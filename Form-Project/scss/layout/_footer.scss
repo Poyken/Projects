@@ -92,4 +92,10 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .footer-top {
+    flex-wrap: wrap;
+    .footer-top-greenchop {
+      display: none;
+    }
+  }
 }
