@@ -331,9 +331,18 @@ p {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .footer .container .footer-top > :nth-child(2) {
+    display: none;
+  }
+}
 body {
   max-width: 100vw;
   overflow: hidden auto;
+}
+
+input[type=radio]:checked ~ .header .container .row .header-right .menu > ul > li::after {
+  background-color: #46b20f;
 }
 
 /*# sourceMappingURL=style.css.map */

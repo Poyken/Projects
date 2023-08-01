@@ -386,6 +386,14 @@
     padding: 0 50px;
   }
 }
+@media screen and (max-width: 992px) {
+  .new-item {
+    flex-direction: column;
+  }
+  .new-item .item {
+    margin: 0 auto;
+  }
+}
 .protect {
   position: relative;
 }
@@ -477,6 +485,11 @@
   max-width: 216px;
 }
 
+@media screen and (max-width: 1200px) {
+  .unique {
+    margin-left: 50px;
+  }
+}
 .form {
   margin: 150px 0;
 }

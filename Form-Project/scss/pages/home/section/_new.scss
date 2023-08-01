@@ -111,3 +111,11 @@
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .new-item {
+    flex-direction: column;
+    .item {
+      margin: 0 auto;
+    }
+  }
+}
