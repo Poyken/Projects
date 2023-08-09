@@ -591,6 +591,7 @@
   }
   .form .container .form-right .input form :nth-child(4) {
     margin: 0 auto;
+    width: 90vw;
   }
 }
 

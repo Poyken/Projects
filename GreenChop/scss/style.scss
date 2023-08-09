@@ -1,0 +1,10 @@
+@import "parts/variables";
+@import "parts/font";
+@import "parts/reset";
+@import "parts/mixin";
+@import "parts/base";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home/hero.scss";
