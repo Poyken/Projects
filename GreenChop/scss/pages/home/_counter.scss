@@ -1,0 +1,23 @@
+.counter {
+  padding: 100px 0;
+  .counter-heading {
+    max-width: 54%;
+    margin: 0 auto;
+    margin-bottom: 110px;
+    text-align: center;
+    h2 {
+      margin-bottom: 24px;
+      font-size: 3.1rem;
+      line-height: 1.3;
+    }
+  }
+  .counter-list {
+    .counter-item {
+      border-radius: 3.333px;
+      background: var(--white, #fff);
+      box-shadow: -5.8333330154418945px 8.333333015441895px 72.5px 0px
+        rgba(54, 54, 54, 0.12);
+      padding: 33.33px;
+    }
+  }
+}

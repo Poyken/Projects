@@ -7,18 +7,14 @@
 }
 html {
   font-size: 10px;
-  scroll-behavior: smooth;
 }
 body {
-  font-family: $font;
-  color: $textColor;
-  line-height: 1.25;
   font-size: $fontSize;
-  overflow-x: hidden;
+  color: $textColor;
+  font-family: $primaryFont;
 }
 a {
   text-decoration: none;
-  color: $linkColor;
 }
 img {
   max-width: 100%;
@@ -27,13 +23,4 @@ img {
 ul,
 ol {
   list-style: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $headingColor;
-  margin: 20px 0;
 }
